@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- source : https://www.w3schools.com/w3css/w3css_templates.asp -->
+<!-- template : https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h -->
+<html lang="en">
+
+<head>
+    <title>Loann Giovannangeli</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="perso.css">
+    <script src="perso.js" defer></script>
+
+</head>
+
+<body onload="customLoad()">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <center><img src="imgs/moi3.jpg" alt="ID picture" width="150" height="150" style="margin-bottom: 30px;" />
+            </center>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
+            <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a>
+            <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
+            <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teaching</a>
+            <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resources</a>
+        </div>
+        
+        <div id="contact" class="w3-container">
+            <h5><b>Contact</b></h5>
+            <a href="mailto:loann.giovannangeli@u-bordeaux.fr">&#128231; loann.giovannangeli[at]u-bordeaux.fr</a>
+            <p>&#127970; LaBRI, Université de Bordeaux, UMR CNRS 5800<br>351, cours de la Libération, 33405 Talence, France</p>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px">
+            <h1 class="w3-jumbo"><b>Loann GIOVANNANGELI</b></h1>
+            <h2><b><i>P.h.D. Student</i></b></h2>
+        </div>
+
+        <!-- About me -->
+        <div class="w3-container" id="about_me" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>About me.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>WIP</p>
+        </div>
+
+
+        <!-- Research -->
+        <div class="w3-container" id="research" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Research.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>WIP</p>
+        </div>
+
+        <!-- Publications -->
+        <div class="w3-container" id="publications" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Publications.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <h4>2022</h4>
+            <table class="publis">
+                <tr class="publi">
+                    <td class="quality">J1</td>
+                    <td>
+                        <span class="authors">Loann Giovannangeli, Romain Bourqui, Romain Giot and David Auber</span>
+                        <span class="title">Color and Shape efficiency for outlier detection from automated to user
+                            evaluation</span>
+                        <span class="entry">Visual Informatics</span>
+                        <span class="date">2022</span>
+                        <a class="doi">10.1016/j.visinf.2022.03.001</a>
+                    </td>
+                </tr>
+            </table>
+            <h4>2021</h4>
+            <table class="publis">
+                <tr class="publi">
+                    <td class="quality">C4</td>
+                    <td>
+                        <span class="authors">Loann Giovannangeli, Frederic Lalanne, D. Auber, Romain Giot and Romain
+                            Bourqui</span>
+                        <span class="title">Deep Neural Network for DrawiNg Networks, (DNN)²</span>
+                        <span class="entry">International Symposium on Graph Drawing and Network Visualization
+                            (GD2021)</span>
+                        <span class="date">Sep, 2021</span>
+                        <a class="doi">10.1109/IV53921.2021.00029</a>
+                    </td>
+                </tr>
+                <tr class="publi">
+                    <td class="quality">C3</td>
+                    <td>
+                        <span class="authors">Loann Giovannangeli, Romain Giot, D. Auber, Jenny Benois-Pineau and Romain
+                            Bourqui</span>
+                        <span class="title">Analysis of Deep Neural Networks Correlations with Human Subjects on a
+                            Perception Task</span>
+                        <span class="entry">International Conference Information Visualisation</span>
+                        <span class="date">Jul, 2021</span>
+                        <a class="doi">10.1007/978-3-030-92931-2_27</a>
+                    </td>
+                </tr>
+            </table>
+            <h4>2020</h4>
+            <table class="publis">
+                <tr class="publi">
+                    <td class="quality">J2</td>
+                    <td>
+                        <span class="authors">Loann Giovannangeli, Romain Bourqui, Romain Giot and David Auber</span>
+                        <span class="title">Toward automatic comparison of visualization techniques: Application to
+                            graph
+                            visualization</span>
+                        <span class="entry">Visual Informatics</span>
+                        <span class="date">2020</span>
+                        <a class="doi">10.1016/j.visinf.2020.04.002</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Teaching -->
+        <div class="w3-container" id="teaching" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Teaching.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>WIP</p>
+        </div>
+
+        <!-- Resources -->
+        <div class="w3-container" id="resources" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Resources.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p><a class="nodeco" href="https://orcid.org/0000-0002-9395-6495"><img src="imgs/orcid.png" height="35"/>&nbsp;[0000-0002-9395-6495]</a></p>
+            <p><a class="nodeco" href="https://hal.archives-ouvertes.fr/search/index/?qa%5BauthIdHal_s%5D%5B%5D=loanngio&qa%5Btext%5D%5B%5D=&submit_advanced=Rechercher&rows=30"><img src="imgs/hal_logo.png" height="35"/>&nbsp;[loanngio]</a></p>
+            <p><a class="nodeco" href="https://arxiv.org/search/cs?searchtype=author&query=Giovannangeli%2C+L"><img src="imgs/arxiv.svg" height="35" style="background-color: #b31b1b;"/>&nbsp;[Giovannangeli, L]</a></p>
+        </div>
+
+        <!-- End page content -->
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    HTMLDocument.prototype.ready = new Promise(function (resolve) {
+        if (document.readyState != "loading")
+            return resolve();
+        else
+            document.addEventListener("DOMContentLoaded", function () {
+                return resolve();
+            });
+    });
+    function customLoad() {
+        document.ready.then(linkDOI());
+    }
+</script>

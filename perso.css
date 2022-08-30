@@ -1,0 +1,86 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.w3-half img:hover {
+    opacity: 1
+}
+
+.publi > td > .entry{
+    font-style: italic;
+}
+
+.publi > td > .doi{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.publi > td > .doi::before{
+    content: "<";
+}
+
+.publi > td > .doi::after{
+    content: ">";
+}
+
+.publi > td > .title::before{
+    content: "``";
+}
+
+.publi > td > .title::after{
+    content: "\",";
+}
+
+.publi > td > .authors::after {
+    content: ",";
+}
+
+.publi > td > .entry::after{
+    content: ",";
+}
+
+.publi > td > .date::after{
+    content: ",";
+}
+
+.publi{
+    text-align: justify;
+}
+
+.publi > .quality{
+    color: #808080;
+    vertical-align: top;
+    min-width: 25px;
+}
+
+#contact{
+    position: relative;
+    bottom: 0px;
+    clear: both;
+    border: solid white 2px;
+    border-radius: 25px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: normal;
+}
+
+.nodeco{
+    text-decoration: none;
+}
