@@ -84,3 +84,11 @@ body {
 .nodeco{
     text-decoration: none;
 }
+
+#about_me > p{
+    text-align: justify;
+}
+
+#research > p{
+    text-align: justify;
+}
