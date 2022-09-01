@@ -39,6 +39,19 @@ body {
     content: ">";
 }
 
+.publi > td > .arxiv{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.publi > td > .arxiv::before{
+    content: "<";
+}
+
+.publi > td > .arxiv::after{
+    content: ">";
+}
+
 .publi > td > .title::before{
     content: "``";
 }
