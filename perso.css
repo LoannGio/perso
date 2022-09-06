@@ -76,10 +76,10 @@ body {
     text-align: justify;
 }
 
-.publi > .quality{
+.quality{
     color: #808080;
     vertical-align: top;
-    min-width: 25px;
+    min-width: 50px;
 }
 
 .course_name{
