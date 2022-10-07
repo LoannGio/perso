@@ -76,6 +76,11 @@ body {
     text-align: justify;
 }
 
+.publiadditional{
+    font-weight: bold;
+    font-style: italic;
+}
+
 .quality{
     color: #808080;
     vertical-align: top;
