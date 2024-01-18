@@ -28,6 +28,8 @@ body {
 
 .publi > td > .entry{
     font-style: italic;
+    display: block;
+    float: left;
 }
 
 .publi > td > .doi{
@@ -56,24 +58,9 @@ body {
     content: ">";
 }
 
-.publi > td > .title::before{
-    content: "``";
-}
-
-.publi > td > .title::after{
-    content: "\",";
-}
-
-.publi > td > .authors::after {
-    content: ",";
-}
 
 .publi > td > .entry::after{
-    content: ",";
-}
-
-.publi > td > .date::after{
-    content: ",";
+    content: ",\00a0";
 }
 
 .publi{
@@ -81,8 +68,43 @@ body {
 }
 
 .publiadditional{
-    font-weight: bold;
     font-style: italic;
+    font-size: 13px;
+    display: block;
+    float: left;
+}
+
+/* .title{
+    margin-bottom: -5px;
+} */
+
+.authors, .entry, .date, .doi, .publiadditional {
+    margin-top: -5px;
+    /* background-color: red; */
+    /* border: solid 1px; */
+}
+
+
+.publi > td > .title {
+    display: block;
+}
+
+.publi > td > .authors {
+    display: block;
+    font-size: 13px;
+}
+
+.publi > td > .entry {
+    font-size: 13px;
+}
+.publi > td > .date {
+    display: block;
+    font-size: 13px;
+}
+.publi > td > .doi {
+    /* display: block;
+    font-size: 13px; */
+    display: none;
 }
 
 .quality{

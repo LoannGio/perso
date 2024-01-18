@@ -19,7 +19,8 @@ function onClick(element) {
 
 function linkDOI() {
     let dois = document.getElementsByClassName("doi");
+    let titles = document.getElementsByClassName("title");
     for(let i = 0; i < dois.length; i++){
-        dois[i].href = "https://doi.org/" + dois[i].text;
+        titles[i].innerHTML = "<a href=\"https://doi.org/"+dois[i].text+"\">"+titles[i].textContent+"</a>";
     }
 }
